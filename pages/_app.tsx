@@ -34,6 +34,10 @@ export default function App({ Component, pageProps }: AppProps) {
         />
         <meta name="msapplication-TileColor" content="#ffffff" />
         <meta name="theme-color" content="#ffffff" />
+        <meta
+          name="description"
+          content="Personal website of Marc Mintel, Frontend Developer based in Germany."
+        />
       </Head>
       <Component {...pageProps} />
       <Analytics />
