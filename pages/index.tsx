@@ -134,9 +134,12 @@ export default function Home() {
             src={require("assets/avatar.jpg")}
             alt="Photo of Marc Mintel"
             className="object-cover w-full h-full"
-            sizes="(max-width: 768px) 300px,
+            sizes="
+              (max-width: 468px) 150px,
+              (max-width: 768px) 300px,
               (max-width: 1200px) 768px,
-              1024px"
+              1024px
+            "
           />
         </Tile>
         <Tile
