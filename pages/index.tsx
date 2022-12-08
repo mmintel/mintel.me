@@ -129,11 +129,14 @@ export default function Home() {
   return (
     <Container>
       <div className="grid grid-cols-6 gap-8 my-12">
-        <Tile className="!rounded-full aspect-square overflow-hidden lg:aspect-auto lg:overflow-auto lg:!rounded-2xl lg:col-span-3 xl:col-span-2">
+        <Tile className="w-20 md:w-auto !rounded-full aspect-square overflow-hidden lg:aspect-auto lg:overflow-auto lg:!rounded-2xl lg:col-span-3 xl:col-span-2">
           <Image
             src={require("assets/avatar.jpg")}
             alt="Photo of Marc Mintel"
             className="object-cover w-full h-full"
+            sizes="(max-width: 768px) 300px,
+              (max-width: 1200px) 768px,
+              1024px"
           />
         </Tile>
         <Tile
