@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { Button } from "../components/Button";
 import { Container } from "../components/Container";
 import { Tile } from "../components/Tile";
 
@@ -176,6 +177,38 @@ export default function Home() {
                     </Tile.Content>
                   </Tile>
                 ))}
+            </div>
+          </Tile.Content>
+        </Tile>
+        <Tile className="col-span-3">
+          <Tile.Content>
+            <h1 className="mt-1 text-2xl font-bold tracking-tight text-gray-900 sm:text-3xl lg:text-4xl">
+              Focus on Performance
+            </h1>
+            <p className="my-5 text-xl text-gray-500">
+              I build blazing fast websites using JAM-Stack technologies.
+            </p>
+            <div className="mb-8">
+              <a
+                href="https://pagespeed.web.dev/report?url=https%3A%2F%2Fmintel.me%2F&form_factor=mobile"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <Button>Check yourself</Button>
+              </a>
+            </div>
+            <div className="mx-auto bg-white p-4 rounded-2xl">
+              <Image
+                src={require("assets/pagespeed.png")}
+                alt="Pagespeed report of Mintel.me"
+                className="object-cover w-full h-full"
+                sizes="
+                  (max-width: 468px) 150px,
+                  (max-width: 768px) 300px,
+                  (max-width: 1200px) 768px,
+                  1024px
+                "
+              />
             </div>
           </Tile.Content>
         </Tile>
